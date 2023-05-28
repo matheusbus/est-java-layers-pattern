@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-PadraocamadasApplication<padraocamadas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.estudos.padraocamadas.PadraocamadasApplication",
+            "projectName": "padraocamadas",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
