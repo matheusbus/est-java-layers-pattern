@@ -18,8 +18,10 @@ public class UserDTO {
     }
 
     public UserDTO(User user){
-        this.id = user.getId();
-        this.name = user.getName();
+        if(user != null){
+            this.id = user.getId();
+            this.name = user.getName();            
+        }
     }
 
     public Long getId() {

@@ -31,9 +31,9 @@ public class UserService {
     public List<UserDTO> findAll(){
         List<UserDTO> usersDTO = new ArrayList<>();
 
-        for (User user : repository.findAll()) {
+        repository.findAll().stream().forEach((user) -> {
             usersDTO.add(new UserDTO(user));
-        }
+        });
 
         return usersDTO;
     }
